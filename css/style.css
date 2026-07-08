@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 @font-face {
   font-family: "Open Dyslexic";
@@ -45,9 +46,7 @@ html {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
-  background: black;
+  background: url('../img/stripes-light.png') #8d8d8d;
 }
 
 /*
@@ -278,7 +277,12 @@ textarea {
   }
 }
 h1, h2, h3 {
-  font-weight: 100;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 h1 {
   font-size: 3rem;
@@ -304,6 +308,15 @@ body {
 .main-page header {
   margin-top: 1rem;
   overflow: hidden;
+  background-color: black;
+  background-image: url(../img/jim-simmons-torino.jpg);
+  color: white;
+  margin: 0 -32px;
+  background-size: cover;
+  background-position-y: bottom;
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 5 / 2;
 }
 footer {
   margin-top: 2rem;
@@ -316,19 +329,13 @@ footer img {
   margin: 1rem auto;
 }
 .main-page h1 {
-    border-bottom: 1px solid black;
     font-size: 5rem;
-    margin: 10px 0;
+    margin: 0 0 0 1rem;
 }
 .font-type--od.main-page h1 {
   font-size: 4rem;
 }
-.main-page h1:after {
-  content: '';
-  display: block;
-  border-bottom: 4px solid black;
-  margin-bottom: 4px;
-}
+
 .byline {
   text-align: right;
 }
